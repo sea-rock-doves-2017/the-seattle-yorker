@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+.article-container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+body {
+  font-family: Sans-Serif;
+}
