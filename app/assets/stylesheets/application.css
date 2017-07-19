@@ -24,3 +24,14 @@
 body {
   font-family: Sans-Serif;
 }
+
+#website-header {
+  background: linear-gradient(transparent, #92b3e8)
+}
+
+#website-header h1 {
+  color:#fff;
+  text-shadow:1px 1px 10px #08347a, 1px 1px 10px #08347a;
+  font-size:48px;
+  text-align:center;
+}
