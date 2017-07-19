@@ -13,6 +13,19 @@ RSpec.describe ArticlesController, type: :controller do
     it 'assigns the @articles variable with a value' do
       expect(assigns[:articles]).to eq (Article.all)
     end
-
   end
+
+  describe 'GET #show' do
+    it 'responds with status code 200' do
+      expect(response.status).to eq 200
+    end
+
+    it 'assigns the @article variable with a value' do
+      expect(assigns[:article]).to eq article
+    end
+  end
+
+  describe 'PUT #update' do
+  end
+
 end
