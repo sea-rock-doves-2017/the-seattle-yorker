@@ -13,5 +13,5 @@ end
 50.times do
   categories = ['news', 'culture', 'books', 'business & tech', 'humor', 'cartoons']
   assigned_category = categories[rand(0..5)]
-  Article.create(title: Faker::Witcher.quote, body: Faker::Hipster.paragraphs(3), author: Faker::Name.name, category: assigned_category)
+  Article.create(title: Faker::Simpsons.quote, body: Faker::Hipster.paragraphs(3), author: Faker::Name.name, category: assigned_category)
 end
