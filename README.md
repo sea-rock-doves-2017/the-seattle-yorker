@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simplified (Rails) version of the newyorker.com website.
 
-Things you may want to cover:
+## User Stories:
 
-* Ruby version
+### MVP
+* As a user, I can view all articles on the home page of the website.
+* As a user, I can create an account on the website.
+* As a user, I can login and logout in order to see my profile and subscription status.
+* As a user, I can subscribe to the magazine to see all content (unlimited).
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### STRETCH
+* As a user, I can choose a category in order to view all articles within that category.
+* As a subscriber, I can search the archives of the New Yorker.
+* As a non-subscriber, I can only view 10 full articles a month.
