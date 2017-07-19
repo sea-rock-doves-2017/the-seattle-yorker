@@ -7,11 +7,11 @@ RSpec.describe ArticlesController, type: :controller do
     before(:each) { get :index }
 
     it 'responds with status code 200' do
-      # expect(response.status).to eq 200
+      expect(response.status).to eq 200
     end
 
     it 'assigns the @articles variable with a value' do
-      # expect(assigns[:articles]).to eq (Article.all)
+      expect(assigns[:articles]).to eq (Article.all)
     end
 
   end
