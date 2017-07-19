@@ -5,7 +5,6 @@ RSpec.describe ArticlesController, type: :controller do
 
   describe 'GET #index' do
     before(:each) { get :index }
-
     it 'responds with status code 200' do
       expect(response.status).to eq 200
     end
@@ -17,15 +16,13 @@ RSpec.describe ArticlesController, type: :controller do
 
   describe 'GET #show' do
     it 'responds with status code 200' do
-      expect(response.status).to eq 200
+    expect(response.status).to eq 200
     end
 
     it 'assigns the @article variable with a value' do
+      get :show, params: {id: article.id}
       expect(assigns[:article]).to eq article
     end
-  end
-
-  describe 'PUT #update' do
   end
 
 end

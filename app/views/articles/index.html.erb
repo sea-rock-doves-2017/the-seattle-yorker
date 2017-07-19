@@ -1,18 +1,15 @@
-<h2> All de articlez </h2>
+<h1> All de articlez </h1>
 
 <% @articles.each do |article| %>
-  <div id='article container'>
-    <div id='title'>
-      <h3><%= article.title %></h3>
+  <div class='article container'>
+    <div class='title'>
+      <h2><%=link_to article.title, article %></h2>
     </div>
-    <div id='author'>
-      <%= article.author %>
+    <div class='author'>
+      <h4>By: <%= article.author %></h4>
     </div>
-    <div id='body'>
-      <%= article.body %>
-    </div>
-    <div id='category'>
-      <%= article.category %>
+    <div class='category'>
+      <p>Category: <%= article.category %></p>
     </div>
   </div>
 <% end %>
