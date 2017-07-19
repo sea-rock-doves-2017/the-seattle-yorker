@@ -10,7 +10,6 @@
   User.create(username: Faker::Internet.user_name, password_digest: 'password')
 end
 
-
 50.times do
   categories = ['news', 'culture', 'books', 'business & tech', 'humor', 'cartoons']
   assigned_category = categories[rand(0..5)]
