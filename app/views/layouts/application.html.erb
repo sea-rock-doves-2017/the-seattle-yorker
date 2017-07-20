@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TheSeattleYorker</title>
+    <title>The Seattle Yorker</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
+    <nav>
+      <div id='website-header'>
+        <%= link_to 'Home', :root %>
+        <% if !session[:id]%>
+          <%= link_to 'Create an Account', new_user_path %>
+          <%= link_to 'Login', login_path %>
+        <% else %>
+          <%= link_to 'Logout'%>
+        <% end %>
+        <h1>The Seattle Yorker</h1>
+      <div>
+    </nav>
   </head>
 
   <body>

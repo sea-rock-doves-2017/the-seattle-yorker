@@ -1,0 +1,13 @@
+<% @articles.each do |article| %>
+  <div class='article-container'>
+    <div class='title'>
+      <h2><%=link_to article.title, article %></h2>
+    </div>
+    <div class='author'>
+      <h4>Written by: <%= article.author %></h4>
+    </div>
+    <div class='category'>
+      <p>Category: <%= article.category %></p>
+    </div>
+  </div>
+<% end %>
