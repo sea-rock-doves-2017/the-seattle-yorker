@@ -13,25 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.article-container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
-}
-
-body {
-  font-family: Sans-Serif;
-}
-
-#website-header {
-  background: linear-gradient(transparent, #92b3e8)
-}
-
-#website-header h1 {
-  color:#fff;
-  text-shadow:1px 1px 10px #08347a, 1px 1px 10px #08347a;
-  font-size:48px;
-  text-align:center;
-}

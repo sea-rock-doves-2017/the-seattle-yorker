@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create, :show]
 
-  get 'login' => 'sessions#new'
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  delete '/logout' => 'sessions#destroy'
 
   root to: 'articles#index'
 

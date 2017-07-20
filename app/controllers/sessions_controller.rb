@@ -1,11 +1,11 @@
 class SessionsController < ApplicationController
   def new
-    redirect_to login_path
+    # create new sessions
   end
 
   def create
     user = User.find_by(username: params[:username])
-    session[:user_id] = user.id
+    session[:id] = user.id
     redirect_to articles_path
   end
 
