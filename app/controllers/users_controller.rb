@@ -1,7 +1,7 @@
 class UsersController
   def new
     @user = User.new
-    redirect_to login_path
+    redirect_to new_user_path
   end
 
   def create
